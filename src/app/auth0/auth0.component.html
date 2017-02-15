@@ -1,0 +1,5 @@
+<button *ngIf="!auth.isAuthenticated()" (click)="login()">Login Auth0</button>
+<button *ngIf="auth.isAuthenticated()" (click)="logout()">Logout Auth0</button>
+<button *ngIf="auth.isAuthenticated()" (click)="showProfile()">Show profile</button>
+<button *ngIf="auth.isAuthenticated()" (click)="updateProfile()">Update profile</button>
+<button *ngIf="auth.isAuthenticated()" (click)="callAPI()">Call API</button>

@@ -1,0 +1,9 @@
+<h1>Authentication with Facebook</h1>
+<div *ngIf="photoURL">
+  <img [src]="photoURL" alt=""> Welcome {{ displayName }} <br>
+</div>
+<button (click)="logInFacebook()">Login with facebook</button>
+<button (click)="logOutFacebook()">Logout from facebook</button>
+<button (click)="register()">Register</button>
+<button (click)="loginEmail()">Login with Email</button>
+<div *ngIf="error">{{ error }}</div>
